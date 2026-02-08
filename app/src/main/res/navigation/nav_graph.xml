@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstScreen">
+    <fragment
+        android:id = "@+id/FirstScreen"
+        android:name = "com.example.testgoldpad.Screen1"
+        android:label="Screen1"
+        tools:layout="@layout/screen1">
+        <action
+            android:id="@+id/action_FirstScreen_to_SecondScreen"
+            app:destination="@+id/SecondScreen"/>
+    </fragment>
+    <fragment
+        android:id = "@+id/SecondScreen"
+        android:name = "com.example.testgoldpad.Plot"
+        android:label="Plot"
+        tools:layout = "@layout/plot"/>
+
+
+</navigation>
